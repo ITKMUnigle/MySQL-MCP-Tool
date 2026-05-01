@@ -1,8 +1,11 @@
 {
   "name": "mysql-mcp-tool",
   "version": "1.0.0",
-  "description": "A MCP tool for MySQL database operations supporting stdio and HTTP/SSE transport",
+  "description": "A powerful MCP tool for MySQL database operations with stdio and HTTP/SSE transport support",
   "main": "dist/index.js",
+  "bin": {
+    "mysql-mcp": "dist/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -11,17 +14,28 @@
     "start:stdio": "node dist/index.js --stdio",
     "start:http": "node dist/index.js --http",
     "lint": "eslint src/**/*.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mcp",
     "mysql",
     "database",
     "ai",
-    "claude"
+    "claude",
+    "cursor",
+    "trae",
+    "model-context-protocol"
   ],
-  "author": "unigle",
+  "author": "ITKMUnigle",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ITKMUnigle/MySQL-MCP-Tool.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "cors": "^2.8.5",
