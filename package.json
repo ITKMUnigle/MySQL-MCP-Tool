@@ -1,6 +1,6 @@
 {
   "name": "@itkmoon/mysql-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A powerful MCP tool for MySQL database operations with stdio and HTTP/SSE transport support",
   "main": "dist/index.js",
   "bin": {
