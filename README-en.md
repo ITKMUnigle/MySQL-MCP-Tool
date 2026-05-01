@@ -21,18 +21,13 @@ A powerful Model Context Protocol (MCP) tool for MySQL database operations, supp
 
 ## 📦 Installation
 
-### Prerequisites
-
-- Node.js >= 18.0.0
-- MySQL server (local or remote)
-
-### Install via npm
+### Via npm (Recommended)
 
 ```bash
-npm install -g @itkmoon/mysql-mcp
+npm install -g itkmoon-mysql-mcp
 ```
 
-### Install via GitHub
+### Via GitHub
 
 ```bash
 git clone https://github.com/ITKMUnigle/MySQL-MCP-Tool.git
@@ -56,9 +51,7 @@ npm run build
 | `MYSQL_DATABASE` | Default database (optional) | - |
 | `MYSQL_ALLOW_WRITE` | Enable write operations | `false` |
 
-### .env File
-
-Create a `.env` file in the project root:
+Create a `.env` file:
 
 ```env
 MCP_TRANSPORT=stdio
@@ -72,26 +65,14 @@ MYSQL_ALLOW_WRITE=false
 
 ## 🚀 Usage
 
-### CLI Mode
-
-```bash
-# Stdio mode (for IDE integration)
-npm run start:stdio
-
-# HTTP mode (for remote access)
-npm run start:http
-```
-
 ### Claude Desktop Configuration
-
-Add to `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
-    "mysql": {
+    "MySQL MCP Tool": {
       "command": "node",
-      "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
+      "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
       "env": {
         "MYSQL_HOST": "localhost",
         "MYSQL_PORT": "3306",
@@ -107,14 +88,12 @@ Add to `claude_desktop_config.json`:
 
 ### Cursor Configuration
 
-Add to `%USERPROFILE%\.cursor\mcp.json`:
-
 ```json
 {
   "mcpServers": {
-    "mysql": {
+    "MySQL MCP Tool": {
       "command": "node",
-      "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
+      "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
       "env": {
         "MYSQL_HOST": "localhost",
         "MYSQL_PORT": "3306",
@@ -130,15 +109,13 @@ Add to `%USERPROFILE%\.cursor\mcp.json`:
 
 ### Trae Configuration
 
-Add to `%APPDATA%\Trae\mcp.json`:
-
 ```json
 {
   "mcp": {
     "servers": {
-      "mysql": {
+      "MySQL MCP Tool": {
         "command": "node",
-        "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
+        "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
         "env": {
           "MYSQL_HOST": "localhost",
           "MYSQL_PORT": "3306",
@@ -170,84 +147,10 @@ Add to `%APPDATA%\Trae\mcp.json`:
 
 By default, the tool runs in **read-only mode** and only allows SELECT queries.
 
-To enable write operations (INSERT, UPDATE, DELETE, CREATE, DROP, etc.):
+To enable write operations:
 
 ```env
 MYSQL_ALLOW_WRITE=true
-```
-
-**Security Note**: When enabling write operations, ensure:
-- Use a MySQL user with appropriate permissions
-- Avoid using the root user in production
-- Limit database access scope
-
-## 💡 Usage Examples
-
-### List all databases
-
-```
-Please list all databases in MySQL
-```
-
-### Query with database switch
-
-```
-Switch to test database, then query all data from users table
-```
-
-### View table structure
-
-```
-Show the structure of the orders table
-```
-
-### Execute complex query
-
-```
-Execute SQL: SELECT department, COUNT(*) as count FROM employees GROUP BY department
-```
-
-### Insert data (requires write permission)
-
-```
-Insert a new record into employees table: name: John, department: IT, salary: 5000
-```
-
-## 🔧 Development
-
-```bash
-# Install dependencies
-npm install
-
-# Build
-npm run build
-
-# Development mode (watch)
-npm run dev
-
-# Lint
-npm run lint
-
-# Type check
-npm run typecheck
-```
-
-## 📁 Project Structure
-
-```
-mysql-mcp-tool/
-├── src/
-│   ├── index.ts          # Entry point
-│   ├── server.ts         # MCP server implementation
-│   ├── mysql-client.ts   # MySQL client with connection pool
-│   ├── tools.ts          # MCP tool definitions
-│   ├── config.ts         # Configuration management
-│   └── types.ts          # TypeScript type definitions
-├── dist/                 # Compiled JavaScript
-├── .env.example          # Environment variables template
-├── package.json
-├── tsconfig.json
-└── README.md
 ```
 
 ## 📄 License
@@ -257,4 +160,4 @@ MIT License
 ## 🔗 Links
 
 - [GitHub Repository](https://github.com/ITKMUnigle/MySQL-MCP-Tool)
-- [Report Issues](https://github.com/ITKMUnigle/MySQL-MCP-Tool/issues)
+- [npm Package](https://www.npmjs.com/package/itkmoon-mysql-mcp)
