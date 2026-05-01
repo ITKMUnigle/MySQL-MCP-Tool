@@ -24,7 +24,7 @@ A powerful Model Context Protocol (MCP) tool for MySQL database operations, supp
 ### Via npm (Recommended)
 
 ```bash
-npm install -g itkmoon-mysql-mcp
+npm install -g @itkmoon/mysql-mcp
 ```
 
 ### Via GitHub
@@ -72,7 +72,7 @@ MYSQL_ALLOW_WRITE=false
   "mcpServers": {
     "MySQL MCP Tool": {
       "command": "node",
-      "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
+      "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
       "env": {
         "MYSQL_HOST": "localhost",
         "MYSQL_PORT": "3306",
@@ -93,7 +93,7 @@ MYSQL_ALLOW_WRITE=false
   "mcpServers": {
     "MySQL MCP Tool": {
       "command": "node",
-      "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
+      "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
       "env": {
         "MYSQL_HOST": "localhost",
         "MYSQL_PORT": "3306",
@@ -115,7 +115,7 @@ MYSQL_ALLOW_WRITE=false
     "servers": {
       "MySQL MCP Tool": {
         "command": "node",
-        "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
+        "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
         "env": {
           "MYSQL_HOST": "localhost",
           "MYSQL_PORT": "3306",
@@ -160,4 +160,4 @@ MIT License
 ## 🔗 Links
 
 - [GitHub Repository](https://github.com/ITKMUnigle/MySQL-MCP-Tool)
-- [npm Package](https://www.npmjs.com/package/itkmoon-mysql-mcp)
+- [npm Package](https://www.npmjs.com/package/@itkmoon/mysql-mcp)
