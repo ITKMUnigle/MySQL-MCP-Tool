@@ -24,7 +24,7 @@
 ### 方式一: npm 安装（推荐）
 
 ```bash
-npm install -g itkmoon-mysql-mcp
+npm install -g @itkmoon/mysql-mcp
 ```
 
 ### 方式二: GitHub 克隆
@@ -72,7 +72,7 @@ MYSQL_ALLOW_WRITE=false
   "mcpServers": {
     "MySQL MCP Tool": {
       "command": "node",
-      "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
+      "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
       "env": {
         "MYSQL_HOST": "localhost",
         "MYSQL_PORT": "3306",
@@ -93,7 +93,7 @@ MYSQL_ALLOW_WRITE=false
   "mcpServers": {
     "MySQL MCP Tool": {
       "command": "node",
-      "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
+      "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
       "env": {
         "MYSQL_HOST": "localhost",
         "MYSQL_PORT": "3306",
@@ -115,7 +115,7 @@ MYSQL_ALLOW_WRITE=false
     "servers": {
       "MySQL MCP Tool": {
         "command": "node",
-        "args": ["/path/to/node_modules/itkmoon-mysql-mcp/dist/index.js"],
+        "args": ["/path/to/node_modules/@itkmoon/mysql-mcp/dist/index.js"],
         "env": {
           "MYSQL_HOST": "localhost",
           "MYSQL_PORT": "3306",
@@ -158,4 +158,4 @@ MIT License
 ## 🔗 链接
 
 - [GitHub](https://github.com/ITKMUnigle/MySQL-MCP-Tool)
-- [npm](https://www.npmjs.com/package/itkmoon-mysql-mcp)
+- [npm](https://www.npmjs.com/package/@itkmoon/mysql-mcp)
