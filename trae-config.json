@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "mysql": {
+      "command": "node",
+      "args": [
+        "D:/DevProject/tare.ai/MCP/mysql-server/dist/index.js"
+      ],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "unigle.CN",
+        "MYSQL_ALLOW_WRITE": "false"
+      }
+    }
+  }
+}
