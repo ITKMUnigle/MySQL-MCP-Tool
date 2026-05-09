@@ -27,6 +27,29 @@
 npm install -g @itkmoon/mysql-mcp
 ```
 
+客户端配置
+
+```json
+{
+  "mcp": {
+    "servers": {
+      "MySQL MCP Tool": {
+        "command": "npx",
+        "args": ["-y", "@itkmoon/mysql-mcp"],
+        "env": {
+          "MYSQL_HOST": "localhost",
+          "MYSQL_PORT": "3306",
+          "MYSQL_USER": "root",
+          "MYSQL_PASSWORD": "your_password",
+          "MYSQL_DATABASE": "your_database",
+          "MYSQL_ALLOW_WRITE": "false"
+        }
+      }
+    }
+  }
+}
+```
+
 ### 方式二: GitHub 克隆
 
 ```bash
